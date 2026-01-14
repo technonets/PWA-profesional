@@ -37,6 +37,7 @@ A professional boilerplate to create **Progressive Web Apps (PWA)** using **Next
    ```
 
 3. **Build for production**:
+   _Note: We use the `--webpack` flag to ensure PWA compatibility with Next.js 16._
 
    ```bash
    npm run build
@@ -49,7 +50,7 @@ A professional boilerplate to create **Progressive Web Apps (PWA)** using **Next
 
 ### ⚠️ Technical Notes
 
-- **Webpack vs Turbopack**: `next-pwa` requires Webpack. Ensure you use the `--webpack` flag in development.
+- **Webpack vs Turbopack**: `next-pwa` requires Webpack. Ensure you use the `--webpack` flag in both development and build scripts.
 - **HTTPS**: PWAs require an HTTPS connection to work (except for `localhost`).
 - **Icons**: Icons are located in the `public/` directory. If you change them, update `public/manifest.json`.
 
@@ -88,6 +89,7 @@ Una plantilla profesional para crear **Progressive Web Apps (PWA)** utilizando *
    ```
 
 3. **Compilar para producción**:
+   _Nota: Usamos el flag `--webpack` para asegurar la compatibilidad con PWA en Next.js 16._
 
    ```bash
    npm run build
@@ -100,7 +102,7 @@ Una plantilla profesional para crear **Progressive Web Apps (PWA)** utilizando *
 
 ### ⚠️ Notas Técnicas
 
-- **Webpack vs Turbopack**: `next-pwa` requiere Webpack. Asegúrate de usar el flag `--webpack` en desarrollo.
+- **Webpack vs Turbopack**: `next-pwa` requiere Webpack. Asegúrate de usar el flag `--webpack` tanto en desarrollo como en producción.
 - **HTTPS**: Las PWA requieren una conexión HTTPS para funcionar (excepto en `localhost`).
 - **Generación de Archivos**: Los archivos `sw.js` y `workbox-*.js` se generan automáticamente en la carpeta `public/` al compilar.
 
@@ -108,6 +110,7 @@ Una plantilla profesional para crear **Progressive Web Apps (PWA)** utilizando *
 
 - [¿Qué es una PWA? (Conceptos)](./EXPLICACION_PWA.md)
 - [Guía paso a paso de creación](./GUIA_CREACION_PWA.md)
+- [Cómo subir este proyecto a GitHub (Paso a Paso)](./COMO_SUBIR_NEXTJS_A_GITHUB.md)
 
 ---
 

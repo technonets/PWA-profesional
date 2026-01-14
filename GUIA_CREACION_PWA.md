@@ -161,7 +161,7 @@ Debido a que `next-pwa` usa Webpack, debemos forzar este motor en el comando de 
 ```json
 "scripts": {
   "dev": "next dev --webpack",
-  "build": "next build",
+  "build": "next build --webpack",
   "start": "next start"
 }
 ```
