@@ -102,4 +102,4 @@ Cuando modifiques un archivo en el futuro, no necesitas hacer todo lo anterior. 
 
 ---
 
-_Documentación creada profesionalmente para el flujo de trabajo con Next.js._
+_Documentación creada profesionalmente para el flujo de trabajo con Next.js 16.1.1+._

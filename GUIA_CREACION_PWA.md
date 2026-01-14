@@ -35,7 +35,7 @@
 ## 📋 Requisitos Previos
 
 - **Node.js** (Versión 18 o superior).
-- **Next.js 16** (App Router recomendado).
+- **Next.js 16.1.1+** (App Router recomendado).
 - Conocimientos básicos de React y terminal.
 
 ---
