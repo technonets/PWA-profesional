@@ -84,12 +84,14 @@ Cuando modifiques un archivo en el futuro, no necesitas hacer todo lo anterior. 
 
 ## 🛠️ Solución de Errores (Qué hacer si algo falla)
 
-| El error dice...               | ¿Por qué pasó?                               | Solución rápida                                                                                         |
-| :----------------------------- | :------------------------------------------- | :------------------------------------------------------------------------------------------------------ |
-| `remote origin already exists` | Ya intentaste conectar un repo antes.        | Escribe: `git remote remove origin` y luego intenta el `remote add` de nuevo.                           |
-| `failed to push some refs`     | GitHub tiene archivos que tú no tienes.      | Probablemente creaste el repo con un README en la web. Borra el repo en GitHub y créalo vacío de nuevo. |
-| `remote: Not Found`            | La URL está mal escrita o no tienes permiso. | Revisa que la URL sea idéntica a la de GitHub (ojo con las mayúsculas).                                 |
-| `Everything up-to-date`        | No has hecho un 'commit' de tus cambios.     | Asegúrate de hacer `git add .` y `git commit` antes de hacer `push`.                                    |
+| El error dice...                          | ¿Por qué pasó?                                                      | Solución rápida                                                                                         |
+| :---------------------------------------- | :------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------ |
+| `remote origin already exists`            | Ya intentaste conectar un repo antes.                               | Escribe: `git remote remove origin` y luego intenta el `remote add` de nuevo.                           |
+| `failed to push some refs`                | GitHub tiene archivos que tú no tienes.                             | Probablemente creaste el repo con un README en la web. Borra el repo en GitHub y créalo vacío de nuevo. |
+| `remote: Not Found`                       | La URL está mal escrita o no tienes permiso.                        | Revisa que la URL sea idéntica a la de GitHub (ojo con las mayúsculas).                                 |
+| `Everything up-to-date`                   | No has hecho un 'commit' de tus cambios.                            | Asegúrate de hacer `git add .` y `git commit` antes de hacer `push`.                                    |
+| `ERROR: This build is using Turbopack...` | Next.js 16 usa Turbopack por defecto, pero la PWA necesita Webpack. | Asegúrate de que en `package.json` el script de build diga `"next build --webpack"`.                    |
+| `Event handlers cannot be passed...`      | Usaste interactividad (como `onClick`) en un Server Component.      | Agrega `"use client";` en la primera línea de ese archivo (ej: en `app/~offline/page.tsx`).             |
 
 ---
 
